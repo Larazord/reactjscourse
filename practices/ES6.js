@@ -43,7 +43,10 @@ const person = {
   name: 'david'
 };
 
-const secondPerson = person;
+const secondPerson = {
+  ...person,
+  age: '21'
+}
 //se copia el pointer
 
 person.name = 'oscar';
